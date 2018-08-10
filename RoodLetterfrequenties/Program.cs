@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+
+// Rood Letterfrequenties
 
 namespace RoodLetterfrequenties
 {
@@ -6,7 +9,10 @@ namespace RoodLetterfrequenties
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            foreach (string s in args)
+            {
+                Console.WriteLine(s);
+            }
         }
     }
 }
