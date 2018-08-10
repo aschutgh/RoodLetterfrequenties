@@ -26,12 +26,13 @@ namespace RoodLetterfrequenties
             return CharFreq;
         }
 
-        
+        // FIXME: tekstbestand inlezen
+        // FIXME: argument uitlezen
 
         static void Main(string[] args)
         {
             Dictionary<char, int> CharFreq = new Dictionary<char, int>();
-            CharFreq = CountChar("Dit is een test.");
+            CharFreq = CountChar("Dit is een test.æ");
 
             foreach(char c in CharFreq.Keys)
             {
